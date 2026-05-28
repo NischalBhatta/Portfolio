@@ -1,0 +1,108 @@
+:root{
+    --color-orange: orangered;
+    --color-dark: #2f2f2f;
+
+    --body-bg:rgba(128, 128, 128, 0.36) ;
+    --text-color: var(var(--color-dark));
+}
+html{
+    /* scroll-behavior: smooth; */
+}
+*{
+    box-sizing: border-box;
+
+}
+.bo
+body{
+    margin: 0;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    background: rgb(157, 197, 236);
+    min-height: 100vh;
+}
+
+header{
+    box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.36);
+
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo{
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.logo :first-child{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.line::before{
+    content: "";
+    background-color: var(--color-orange);
+
+    width: 3px;
+    height:100%;
+
+    position: absolute;
+    left:28%;
+  
+    
+
+}
+
+.navigation{
+    list-style: none;
+    font-weight: bold;
+}
+
+.navigation li:hover{
+    color: var(--color-orange);
+    transition: all 0.3s;
+}
+
+/* <!-- dark mode toggler --> */
+     
+    /* <!-- nav bar section  --> */
+    /* <!-- banner section  --> */
+    /* <!-- skills section  --> */
+    /* <!-- project section  --> */
+    /* <!-- About Me section  --> */
+    /* <!-- Contact  section  --> */
