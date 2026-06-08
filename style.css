@@ -249,6 +249,25 @@ header{
 }
 
 /* <!-- project section  --> */
+.projects{
+    margin: 5rem;
+}
+
+.project .project-container{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.project .project-card{
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding-bottom: 3rem;
+}
+.project-card .links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 /* <!-- About Me section  --> */
 /* <!-- Contact  section  --> */
 /* <!-- Footer  section  --> */
