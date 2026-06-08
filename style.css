@@ -1,14 +1,19 @@
 :root{
     --color-orange: orangered;
     --color-dark: #2f2f2f;
+    --color-white: white;
 
     --body-bg:rgb(157, 197, 236); ;
     --text-color: var(--color-dark);
+    --border-color:var(--color-dark);
 
     --dark-bg: var(--color-dark);
-    --dark-text-color: white;
+    --dark-text-color: var(--color-white);
+    --dark-border-color: white;
+
+    --shadow: 4px -2px 40px 9px rgb(128, 128, 128, 0.464);
 }
-html{
+.html{
     /* scroll-behavior: smooth; */
 }
 *{
@@ -24,6 +29,7 @@ body{
 .container{
     width: 80%;
     margin: auto;
+    max-width: 1440px;
 }
 
 .flex{
@@ -50,11 +56,12 @@ a{
 }
 .wrapper{
     background: var(--body-bg);
+    color: var(--text-color);
     min-height: 100vh;
 }
 
 header{
-    box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.36);
+    box-shadow: var(--shadow);
 
 }
 .header{
@@ -117,7 +124,8 @@ header{
 #darkMode:checked + .wrapper{
 
     --body-bg: var(--dark-bg);
-    color: var(--dark-text-color);
+    --text-color: var(--dark-text-color);
+    --border-color: var(--dark-border-color);
 }
 #darkMode{
     display: none;
@@ -143,24 +151,76 @@ header{
     justify-content: center;
     padding: 3rem;
     flex-direction: column;
-    margin-left: 10vw;
+    margin-left: 7vw;
 
+}
+
+.left div span{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.left .tag{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.left button{
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+    border-radius: 10px;
+    background-color: var(--body-bg);
+    color: var(--text-color);
 }
 
 .right{
     grid-area: right;
     justify-content: flex-end;
     align-items: left;
-    margin-bottom: -5rem;
+    margin-top: -5rem;
 }
 
 .right img{
-    /* width: 100%;
-    height: 115%; */
+    width: 125%;
+    height: 115%;
 }
 
 
 /* <!-- banner section  --> */
+.banner{
+    margin-top: 7rem;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info-divider{
+    background: grey;
+    width: 2px;
+    height: 70px;
+}
+
+.info-content .icon-container{
+    background: var(--color-orange);
+    width: 4rem;
+    height: 4rem ;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: white;
+}
+.info-content div span{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.info-content div p{
+    color: var(--color-orange);
+}
 /* <!-- skills section  --> */
 /* <!-- project section  --> */
 /* <!-- About Me section  --> */
